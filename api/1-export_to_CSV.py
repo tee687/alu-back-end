@@ -26,7 +26,7 @@ def export_to_csv(employee_id):
     # Generate file name dynamically based on employee ID
     filename = "{}.csv".format(employee_id)
 
-    # Open CSV file with specific quotation rules matching the format requirements
+    # Open CSV file with specific quotation rules matching format requirements
     with open(filename, mode='w', newline='') as csv_file:
         writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
 
