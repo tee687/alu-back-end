@@ -2,8 +2,9 @@
 """
 Fetches and displays an employee's TODO list progress using a REST API.
 """
-import requests
 import sys
+
+import requests
 
 
 def get_todo_progress(employee_id):
