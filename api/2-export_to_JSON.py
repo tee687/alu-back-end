@@ -23,7 +23,7 @@ def export_to_json(employee_id):
     todos_response = requests.get(todos_url)
     todos_data = todos_response.json()
 
-    # Structure data to match: { "USER_ID": [ {"task":..., "completed":..., "username":...}, ... ] }
+    # Structure data to match requirements
     tasks_list = []
     for task in todos_data:
         tasks_list.append({
